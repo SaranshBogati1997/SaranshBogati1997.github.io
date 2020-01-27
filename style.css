@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --darkerBlue: #2E60B4;
+    --darkBlue: #3E91ED;
+    --blue: #5D93CA;
+    --lightBlue: #94C5E0;
+    --lighterBlue: #A0C0D5;
+    --montserrat: 'montserrat', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --open: 'Open Sans Condensed', sans-serif;
+}
+
+.main {
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    padding: 0;
+    font-family: var(--raleway);
+}
+
+.mainSection {
+    min-height: 45em;
+    height: 100vh;
+}
+
+#myNavBar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: -100px;
+    transition: top 0.3s;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    z-index: 213;
+    padding: 1.5em;
+    height: 17vh;
+}
+
+#navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+#navList li a {
+    text-decoration: none;
+    margin: 0 1.5em;
+    color: var(--darkerBlue);
+    transition: color 0.5s;
+    font-family: var(--raleway);
+}
+
+#navList li a:hover {
+    color: var(--lighterBlue);
+}
+
+.active {
+    transition: background-color 1s ease-in;
+    border-bottom: 2px solid white;
+    background-color: rgb(255, 255, 255);
+}
+
+.headQuote {
+    padding-top: 45vh;
+    color: white;
+}
+
+.headQuote h1 {
+    font-family: var(--raleway);
+    color: var(--blue);
+}
+
+.smallQuote {
+    color: var(--lighterBlue);
+}
+
+#AboutMe {
+    min-height: 50em;
+    box-shadow: 0px 1px 5px 2px rgb(22, 21, 21);
+}
+
+#myPhoto {
+    padding: 5em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.intro {
+    padding: 5em;
+}
+
+.intro h1 {
+    font-size: 6vw;
+}
+
+.myWorks {
+    min-height: 45em;
+}
+
+.SkillsAndExperience {
+    min-height: 45em;
+    margin-top: 5em;
+    background-color: rgb(29, 29, 29);
+}
+
+.contact {
+    min-height: 20em;
+    background-color: var(--lighterBlue);
+    padding: 3em;
+}
+
+.kirana,
+.SearchLucene,
+.coktailsNepal {
+    height: auto;
+    width: 40%;
+    margin: 1em auto;
+    box-shadow: 0px 1px 5px 2px rgb(22, 21, 21);
+}
+
+.card {
+    background-color: rgb(29, 29, 29) !important;
+    color: var(--lighterBlue);
+}
+
+.card:hover {
+    background-color: rgb(15, 15, 15) !important
+}
+
+.imgTop:hover {
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.myWorks img {
+    height: 35%;
+    z-index: 3;
+    width: 100%;
+    padding: 0;
+}
+
+#myWorks button a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-title {
+    color: var(--darkerBlue) !important;
+}
+
+#Kiranalink,
+#CocktailNepallink {
+    text-decoration: none;
+    color: white;
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgb(29, 29, 29);
+    background: rgb(29, 29, 29);
+    font-size: 2vw;
+    color: white;
+    font-family: var(--open);
+}
+
+.Csharp {
+    background-color: #2E60B4;
+    border-radius: 15px 15px 0 0;
+    transition: background-color 1s, color 1s;
+}
+
+.Csharp:hover {
+    background-color: white;
+    color: #2E60B4;
+}
+
+.ASP {
+    background-color: rgb(60, 105, 184);
+    transition: background-color 1s, color 1s;
+}
+
+.ASP:hover {
+    background-color: white;
+    color: rgb(60, 105, 184);
+}
+
+.java {
+    background-color: rgb(68, 110, 184);
+    transition: background-color 1s, color 1s;
+}
+
+.java:hover {
+    background-color: white;
+    color: rgb(68, 110, 184);
+}
+
+.javascript {
+    background-color: rgb(80, 116, 179);
+    transition: background-color 1s, color 1s;
+}
+
+.javascript:hover {
+    background-color: white;
+    color: rgb(80, 116, 179);
+}
+
+.HTML {
+    border-radius: 0 0 15px 15px;
+    background-color: rgb(93, 125, 180);
+    transition: background-color 1s, color 1s;
+}
+
+.HTML:hover {
+    background-color: white;
+    color: rgb(93, 125, 180);
+}
+
+.contactList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+}
+
+.contactList li {
+    list-style-type: none;
+    margin: 0 3em;
+    font-size: 2vw;
+}
+
+.contactList li a {
+    text-decoration: none;
+}
+
+#goUp {
+    position: fixed;
+    right: 1em;
+    bottom: 1.5em;
+    font-size: 3vw;
+    z-index: 56;
+    display: none;
+}
+
+#contactId h3 {
+    font-size: 6vw;
+}
