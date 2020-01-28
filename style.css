@@ -19,7 +19,7 @@ body {
     height: 40vh;
     position: absolute;
     width: 95vw;
-    left: -93vw;
+    left: -90w;
     background-color: var(--darkerBlue);
     transition: left 1s, background-color 2s, height 1s, top 1s;
     z-index: 50;
@@ -153,7 +153,7 @@ body {
     top: 10vw;
     height: 40vh;
     position: absolute;
-    width: 2vw;
+    width: 4vw;
     right: 0;
     background-color: var(--darkBlue);
     z-index: 52;
